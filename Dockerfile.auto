@@ -44,7 +44,7 @@
 #           ssh localhost user@127.0.0.1 -p 50922
 #           docker exec -it containerid ssh -i ~/.ssh/id_docker_osx user@127.0.0.1 -p 10022
 
-FROM docker-osx:base
+FROM docker-osx-base
 
 LABEL maintainer='https://twitter.com/sickcodes <https://sick.codes>'
 
@@ -135,8 +135,8 @@ ARG WGET_OPTIONS=
 # ARG WGET_OPTIONS='--no-verbose'
 
 # Feel free to take a copy of this image and then host it internally
-ARG IMAGE_URL='https://images.sick.codes/mac_hdd_ng_auto.img'
-# ARG IMAGE_URL='https://images.sick.codes/mac_hdd_ng_auto_big_sur.img'
+# ARG IMAGE_URL='https://images.sick.codes/mac_hdd_ng_auto.img'
+ARG IMAGE_URL='https://images.sick.codes/mac_hdd_ng_auto_monterey.img'
 
 RUN if [[ "${COMPLETE}" ]]; then \
         echo "Downloading 20GB image... This step might take a while... Press Ctrl+C if you want to abort." \
