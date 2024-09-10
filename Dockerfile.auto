@@ -40,7 +40,7 @@
 #           ssh localhost user@127.0.0.1 -p 50922
 #           docker exec -it containerid ssh -i ~/.ssh/id_docker_osx user@127.0.0.1 -p 10022
 
-FROM sickcodes/docker-osx:latest
+FROM docker-osx:base
 
 LABEL maintainer='https://twitter.com/sickcodes <https://sick.codes>'
 
@@ -190,6 +190,8 @@ ENV PASSWORD=alpine
 
 # dynamic RAM options for runtime
 ENV RAM=3
+# ENV CORES=2
+# ENV SIZE=50G
 # ENV RAM=max
 # ENV RAM=half
 

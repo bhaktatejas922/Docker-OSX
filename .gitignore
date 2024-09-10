@@ -1,0 +1,27 @@
+# Ignore large files
+*.iso
+*.dmg
+*.qcow2
+*.vdi
+*.vmdk
+*.vhd
+*.hdd
+
+# Ignore macOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Ignore Docker-specific files
+.dockerignore
+docker-compose.override.yml
+
+# Ignore log files
+*.log
+
+# Ignore temporary files
+*.tmp
+*.swp
+*.bak
+*.img
+**/*.img
