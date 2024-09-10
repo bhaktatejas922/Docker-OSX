@@ -26,7 +26,11 @@
 #
 # Build:
 #
-#       docker build -t docker-osx:auto -f Dockerfile.auto .
+#       docker build -t docker-osx-auto -f Dockerfile.auto .
+# upload to ecr 
+# aws ecr get-login-password --region us-east-2 | docker login --username AWS --password-stdin 406515214055.dkr.ecr.us-east-2.amazonaws.com
+# docker tag docker-osx-auto 406515214055.dkr.ecr.us-east-2.amazonaws.com/docker-osx-auto:latest
+# docker push 406515214055.dkr.ecr.us-east-2.amazonaws.com/docker-osx-auto:latest
 # 
 # Run:
 # 
